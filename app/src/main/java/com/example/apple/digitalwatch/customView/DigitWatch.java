@@ -29,17 +29,17 @@ public class DigitWatch extends LinearLayout {
 
     public DigitWatch(Context context) {
         super(context);
-        init(context);
+        init();
     }
 
     public DigitWatch(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        init(context);
+        init();
     }
 
     public DigitWatch(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context);
+        init();
     }
 
     @Override
@@ -51,9 +51,23 @@ public class DigitWatch extends LinearLayout {
     }
 
     private void dotsDraw(Canvas canvas) {
+        int second = Integer.parseInt(secondS);
+        if(second % 2 == 0) {
+            int x = (xCenter + 290) / 2;
+            int y = yCenter / 2;
+            canvas.drawLine(x, y - 35, x, y - 15, paint);
+            canvas.drawLine(x, y + 35, x, y + 15, paint);
+            canvas.drawLine(x + 170, y - 35, x + 170, y - 15, paint);
+            canvas.drawLine(x + 170, y + 35, x + 170, y + 15, paint);
+        }
     }
 
-    private void init(Context context) {
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    private void init() {
         View view = LayoutInflater.from(getContext())
                 .inflate(R.layout.digit_watch_view, this, true);
         hourFirst = findViewById(R.id.hourFirst);
@@ -91,7 +105,6 @@ public class DigitWatch extends LinearLayout {
     }
 
     public void invalidateValue(String time) {
-        String l = String.valueOf(time.charAt(0));
         hourF = String.valueOf(time.charAt(0));
         hourS = String.valueOf(time.charAt(1));
         minuteF = String.valueOf(time.charAt(3));
