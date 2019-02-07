@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 setContentView(R.layout.activity_main);
-                handler.postDelayed(run, 250);
+                handler.postDelayed(run, 1000);
             }
         };
         handler = new Handler();

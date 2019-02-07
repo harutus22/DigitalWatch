@@ -1,60 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center">
-    <TextView
+    <!--<TextView-->
+        <!--android:id="@+id/hourFirst"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="40dp"-->
+        <!--android:text="0"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/hourSecond"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="40dp"-->
+        <!--android:text="0"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/dots"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="40dp"-->
+        <!--android:text=" "/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/minuteFirst"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="40dp"-->
+        <!--android:text="0"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/minuteSecond"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="40dp"-->
+        <!--android:text="0"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/secondFirst"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="40dp"-->
+        <!--android:text="0"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/secondSecond"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="40dp"-->
+        <!--android:text="0"/>-->
+
+    <com.example.apple.digitalwatch.customView.NumberView
         android:id="@+id/hourFirst"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="0"/>
+        android:layout_width="25dp"
+        android:layout_height="40dp" />
 
-    <TextView
+    <com.example.apple.digitalwatch.customView.NumberView
         android:id="@+id/hourSecond"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="0"/>
-    <TextView
-        android:id="@+id/dots"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text=" "/>
+        android:layout_width="25dp"
+        android:layout_height="40dp" />
 
-    <TextView
-        android:id="@+id/minuteFirst"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="0"/>
-
-    <TextView
-        android:id="@+id/minuteSecond"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="0"/>
     <TextView
         android:id="@+id/dots2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40dp"
         android:text=" "/>
+
+    <com.example.apple.digitalwatch.customView.NumberView
+        android:id="@+id/minuteFirst"
+        android:layout_width="25dp"
+        android:layout_height="40dp" />
+
+    <com.example.apple.digitalwatch.customView.NumberView
+        android:id="@+id/minuteSecond"
+        android:layout_width="25dp"
+        android:layout_height="40dp" />
+
     <TextView
+    android:id="@+id/dots"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    android:text=" "/>
+
+    <com.example.apple.digitalwatch.customView.NumberView
         android:id="@+id/secondFirst"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="0"/>
-    <TextView
+        android:layout_width="25dp"
+        android:layout_height="40dp" />
+
+    <com.example.apple.digitalwatch.customView.NumberView
         android:id="@+id/secondSecond"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="0"/>
+        android:layout_width="25dp"
+        android:layout_height="40dp" />
 
 </LinearLayout>
